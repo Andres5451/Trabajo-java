@@ -1,11 +1,11 @@
-package Trabajos;
+package main.java.Trabajos;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Estudiantes[] estudiantes = new Estudiantes[3];
+        Trabajos.Estudiantes[] estudiantes = new Trabajos.Estudiantes[3];
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Ingress los dates del estudiante " + (i + 1) + ":");
@@ -24,12 +24,12 @@ public class Main {
                 notas[j] = scanner.nextDouble();
             }
 
-            estudiantes[i] = new Estudiantes(nombre, edad, notas);
+            estudiantes[i] = new Trabajos.Estudiantes(nombre, edad, notas);
             scanner.nextLine();
         }
 
         System.out.println("\nPromedios de los estudiantes:");
-        for (Estudiantes estudiante : estudiantes) {
+        for (Trabajos.Estudiantes estudiante : estudiantes) {
             System.out.println(estudiante.getNombre() + ": " + estudiante.calcularPromedio());
         }
 
