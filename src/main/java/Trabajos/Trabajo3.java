@@ -1,4 +1,4 @@
-package Trabajos;
+package main.java.Trabajos;
 //calculadora try-catch
 import java.util.Scanner;
 
